@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Što obući</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <h1 class="text-3xl font-bold text-center pb-8">Što obući ovaj tjedan?</h1>
+        <form id="search-form" >
+            <div class="relative">
+                <input type="search" id="default-search" class="border p-4" placeholder="Pronađi grad" required>
+                <button type="button" class="p-4 ml-4 border" id="search-button">Search</button>
+            </div>
+        </form>
+        <div id="weather-container">
+            <p id="day1"></p>
+            <p id="day2"></p>
+            <p id="day3"></p>
+            <p id="day4"></p>
+            <p id="day5"></p>
+            <p id="day6"></p>
+            <p id="day7"></p>
+        </div>
+    </div>
+    <div class="absolute w-full h-full bg-black" id="modulWindow"></div>
+    <script src="main.js"></script>
+</body>
+</html>
